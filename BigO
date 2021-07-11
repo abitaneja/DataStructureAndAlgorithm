@@ -1,0 +1,24 @@
+-Ignoring Constants
+    Big O notation answers the key question:- if there are N data elements, how many steps will the
+    algorithm take ? Because Selection sort takes roughly half of (N square) steps, it would seems
+    reasonable that we'd describe the efficiency of Selection sort as being O(N square/2).
+
+    But Big O notation ignores constants.
+
+    This is simply a mathematical way of saying that Big O notation never includes regular
+    numbers that aren't an exponent. we simple drop these regular numbers from the expression.
+
+    =>  (N square)/2 =O(N square)
+    =>  N/2= O(N)
+    =>  (N square) + 10 = O(N square)
+    =>  2*N =   O(N)
+    =>  100*N   =   O(N)
+
+- Big O categories
+    Big O notation only concerns itself with general categories of algorithms speeds.
+
+    when two algorithms fall under the same classification of Big O, it does not necessarily
+    mean that both algorithms have the same speed. After all, Bubble sort is twice as slow as
+    Selection Sort even though both are O(N square). So, while Big O is perfect for contrasting
+    algorithms that fall under different classifications of Big O, when two algorithms fall
+    under same classification, further analysis is required to determine which algorithm is faster.
