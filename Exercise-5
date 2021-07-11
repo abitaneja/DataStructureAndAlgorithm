@@ -1,0 +1,38 @@
+Q1:- use Big O notation to describe the time complexity of an algorithm that takes 4N+16 steps ?
+A:- O(N) => Because Big O ignores multipliers or constants.
+
+Q2:- use Big O notation to describe the time complexity of an algorithm that takes 2*(N square)
+A:- O(N square) => Because Big O ignores multipliers or constants.
+
+Q3:- Use Big O notation to describe the time complexity of a notation where you have an array
+        1) you ran a loop to multiply each element by 2
+        2) you run a loop to sum all the elements of array.
+A:- O(N) => Because you are running the loop twice O(N+N)=O(2N)=O(N)
+
+Q4:- Use Big O notation to describe the time complexity of the an array of strings and prints
+     each string in multiple cases:
+        def multiple_cases(array):
+            array.each do|string|
+                put string.upcase
+                put string.downcase
+                put string.capitalize
+            end
+        end
+
+A:- O(N) => because loop only run once and all the operation are within single loop
+
+Q5:- The next function iterates over an array of numbers, and for each number whose index is
+     even, it prints the sum of that number plus every number in array. what is this function's
+     efficiency in terms of Big O notation ?
+        def every_other(array):
+            array.each_with_index do|number,index|
+                if index.even?
+                    array.each do|other_number|
+                        puts number+other_number
+                    end
+                end
+            end
+        end
+
+A:- O(N square) => running inner loop half of time within a loop
+    => (N Square)/2 => ignores the constants=> O(N square)
